@@ -11,6 +11,12 @@
 			<version>2.2.2</version>
 			<scope>provided</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-math</artifactId>
+			<version>2.2</version>
+		</dependency>
+
 	</dependencies>
 	<properties>
 		<!-- Maven specific -->
@@ -23,18 +29,6 @@
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.5.1</version>
-				<!-- if delete below then import is OK -->
-				<configuration>
-					<compilerId>jdt</compilerId>
-				</configuration>
-				<dependencies>
-					<dependency>
-						<groupId>org.eclipse.tycho</groupId>
-						<artifactId>tycho-compiler-jdt</artifactId>
-						<version>0.25.0</version>
-					</dependency>
-				</dependencies>
-				<!-- if delete above then import is OK -->
 			</plugin>
 		</plugins>
 	</build>
